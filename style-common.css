@@ -1,0 +1,83 @@
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+h1, h2{
+    text-align: center;
+}
+/*제목 부분(ABOUT IU)*/
+h1{ font-size: 45px ;
+    color: rgb(185, 115, 225);
+    border-bottom:1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+/*이미지 기본 정렬*/
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*네비바*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #9fffff7a;
+  }
+              
+  li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a.active {
+    background-color:  rgb(101, 202, 248);
+color:  rgb(204, 1, 255);
+    
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(171, 230, 253);
+    color: rgb(233,162,251);
+    
+    
+  }
+/*링크 외관 설정*/
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: salmon;
+    background-color: rgb(168,223,244);
+}
+a:active{
+    color: rgb(185, 115, 225);
+}
+/*전체 페이지 외곽 설정*/
+body{
+    margin: 0;
+}
+/*페이지 크기 변화 시 설정 변화*/
+@media(max-width:530px){
+    #grid{
+        display: block;
+
+    }
+    ol{ 
+        text-align: center;
+        list-style: none;
+        border-right: none;
+        border-bottom: 1px solid gray;
+    }
+}
+
+
+
